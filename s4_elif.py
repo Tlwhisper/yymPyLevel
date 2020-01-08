@@ -1,15 +1,20 @@
 # author yym
-print("玫瑰花语朵，请输入你想送几朵玫瑰花：")
-num = int(input("请输入你想朵玫瑰花："))
-if num == 1:
-    print("你是我的唯一！")
-elif num == 3:
-    print("I love you")
-elif num == 10:
-    print("十全十美！！！")
-elif num == 99:
-    print("天长地久！！！")
-elif num == 108:
-    print("求婚！！")
+# 嵌套分支
+print("将会判定您是否酒驾车")
+num = int(input("请输入酒精含量百分比："))
+if num < 20:
+    print("健康驾车！！！")
+elif num > 20:
+    if num <= 30:
+        print("1级饮酒驾车！")
+    elif num < 40:
+        print("2级饮酒驾车！！")
+    elif num < 50:
+        print("3级饮酒驾车！！！")
+    elif num < 60:
+        print("4级饮酒驾车！！！！")
+    else:
+        print("5级饮酒驾车！！！！")
 else:
-    print("小么也不知道这个是什么意思了，哈哈哈哈")
+    print("20特别危险！！！")
+
