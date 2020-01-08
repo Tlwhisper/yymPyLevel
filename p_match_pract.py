@@ -1,10 +1,9 @@
 # author yym
 import re
-
-pattern = r'(13[4-9]\d{8})|(15[01289]\d{8})'
-mobile = "13644443333"
-match1 = re.match(pattern, mobile)
-if match1 is None:
-    print(mobile, "不是一个有效的移动手机号码")
+pattern = r'(黑客)|(抓取)|(特洛伊)'
+about = "我是一名程序员，喜欢看计算机网络方面的书，比如说天下第一！"
+result = re.search(pattern, about)
+if result is None:
+    print(about, "@ 没有出现敏感字符")
 else:
-    print(mobile, "是一个有效的移动手机号码")
+    print(about, "@ 出现了敏感字符！！")
